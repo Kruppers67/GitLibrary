@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Tektur:wght@400..900&display=swap');
+
+body {
+    margin: 20px;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    align-content: center;
+
+}
+.container {
+    width: 85%;
+    height: 85%;
+    background-color: whitesmoke;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr .2fr 2fr .15fr;
+}
+
+/* Header Info*/
+
+.header {
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    justify-items: center;
+    justify-content: center;
+}
+.header h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Pacifico, cursive;
+    font-weight: 100;
+}
+
+/*Button To Add A New Book*/
+
+#openUserForm {
+    height: 50px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    width:20%;
+    justify-self: center;
+    font-size: x-large;
+    justify-content: center;
+    border-radius: 20px;
+    border: black solid 4px;
+    color: white;
+    background-color: black;
+}
+#openUserForm:hover {
+    background-color: grey;
+    box-shadow: black inset 3px 3px 1rem;
+}
+
+/*Where books will get placed */
+
+#bodybox {
+    background-color: lightslategray;
+    margin: 10px;
+    padding: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+/*This is the user form pop-up. Contains input, radio buttons, and a submit button.*/
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    justify-self: center;
+    align-self: center;
+    justify-items: center;
+    width: 40%;
+    height: 80%;
+    background-color: rgb(95, 22, 34, 85%);
+    box-shadow: black inset 5px 5px 1rem;
+    color: white;
+    border-radius: 10px;
+    border: black solid 5px;
+}
+#modal-content {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr .1fr;
+    grid-template-rows: .2fr 1fr;
+}
+#modal-content h2 {
+    text-align: center;
+    font-size: xxx-large;
+    margin-left: 40px;
+}
+#modal-content input {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: xx-large;
+}
+#modal-content label {
+    font-size: xx-large;
+    font-weight: 800;
+}
+#modal-content form {
+    justify-self: center;
+}
+#readStatus {
+    height: 40px;
+    width: 250px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    font-size: xx-large;
+    
+    
+}
+select {
+    height: 50px !important;
+    width: 100px !important;
+    font-size: xx-large !important;
+    margin-right: 80px !important;
+    background-color: black;
+    color: white;
+    
+}
+
+
+
+.submitbtn {
+    height: 70px;
+    width: 300px;
+    margin-right: 30px;
+    margin-top: 70px;
+    font-size: xx-large;
+    font-family: pacifico, cursive;
+}
+.close {
+    
+    font-size: 70px;
+    font-weight: 900;
+    cursor: pointer;
+    
+}
+.exitbox {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+.book-card {
+    background: pink;
+    padding: 10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    width: 190px;
+    height: 320px;
+    margin: 10px;
+    box-shadow: inset 2px 3px 1rem;
+    justify-content: center;
+}
+.book-card p {
+    font-size: x-large;
+}
+.book-card h3 {
+    font-size: xx-large;
+}
+.book-card button {
+    margin-bottom: 20px;
+    width: 150px;
+    height: 45px;
+    font-size: x-large;
+    
+
+}
+.status {
+    height: 50px !important;
+    width: 200px !important;
+}
+
